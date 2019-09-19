@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Curso VueJS 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>   
+</head>
+<body>
+    <main>
+        <h1>{{texto}}</h1>
+        <h2 v-text="texto"></h2>
+        <input type="text" v-model="nombre">
+        <p>{{nombre}}</p>
+        Nota:
+        <input type="text" v-model="nota">
+        <strong v-if="nota && nota >=5" > Tu nota es {{nota}}</strong>
+        <span v-else>Tu nota es menor es menor a 5</span>
+
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/main.js"></script>
+</html>
